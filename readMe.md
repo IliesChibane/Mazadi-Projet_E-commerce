@@ -48,11 +48,11 @@
 
 #### Diagrammes de cas d'utilisation :
 
-            ![](C:\Users\РА\Desktop\Sawem\Conception\use_case.png)
+            ![usecase.png](Conception\use_case.png?raw=true)
 
 ### <u>3.2 Arboresence du site :</u>
 
-![arborescence.png](..\Conception\arborescence.png)
+![arborescence.png](Conception/arborescence.png?raw=true)
 
 - Home : Page principale ou les différents articles sont affichées avec une barre de recherche 
 
@@ -80,14 +80,14 @@
 
 - Le site n'a pas besoin d'etre host ou de posséder un nom de domaine
 
-| <img src="file:///Conception/react.png" title="" alt="" width="485"> | ![](Conception\django.png) | ![](Conception\sqlite.png) | ![](Conception\rest-api.png) |
+| <img src="Conception/react.png?raw=true" title="" alt="" width="485"> | ![](Conception/django.png?raw=true) | ![](Conception/sqlite.png?raw=true) | ![](Conception/rest-api.png?raw=true) |
 | -------------------------------------------------------------------- | -------------------------- | -------------------------- | ---------------------------- |
 
 ## 
 
 ## <u>4. Conception :</u>
 
-![](Conception\Class.png)
+![](Conception/Class.png?raw=true)
 
 ## <u>5. Planning :</u>
 
