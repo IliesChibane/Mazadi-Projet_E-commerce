@@ -52,7 +52,7 @@
 
 ### <u>3.2 Arboresence du site :</u>
 
-![arborescence.png](Conception\arborescence.png)
+![arborescence.png](..\Conception\arborescence.png)
 
 - Home : Page principale ou les différents articles sont affichées avec une barre de recherche 
 
