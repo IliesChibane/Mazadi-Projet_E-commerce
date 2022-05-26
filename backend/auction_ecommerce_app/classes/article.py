@@ -1,9 +1,8 @@
-from unicodedata import category
 from django.http import JsonResponse
 from rest_framework import status
 from rest_framework.parsers import JSONParser
 from rest_framework.views import APIView
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view
 from rest_framework.permissions import AllowAny
 from auction_ecommerce_app.models import Article
 from auction_ecommerce_app.serializers import ArticleSerializer
@@ -52,8 +51,27 @@ class ArticleView(APIView):
     @api_view(['POST'])
     def article_list_by_category(request):
         if request.method == 'POST': 
-            c = request.data.get('category')
-            print(c)
-            article = Article.objects.filter(category=c)
+            article = Article.objects.filter(category=request.data.get('category'))
             article_serializer = ArticleSerializer(article, many=True)
             return JsonResponse(article_serializer.data, safe=False)
+    
+    @api_view(['POST'])
+    def article_list_by_name(request):
+        if request.method == 'POST': 
+            article = Article.objects.filter(name=request.data.get('name'))
+            article_serializer = ArticleSerializer(article, many=True)
+            return JsonResponse(article_serializer.data, safe=False)
+
+    @api_view(['GET'])
+    def article_list_by_in_auction(request):
+        if request.method == 'GET': 
+            article = Article.objects.filter(in_auction=True)
+            article_serializer = ArticleSerializer(article, many=True)
+            return JsonResponse(article_serializer.data, safe=False)
+
+    @api_view(['POST'])
+    def article_list_by_owner(request):
+        if request.method == 'POST': 
+            article = Article.objects.filter(owner=request.data.get('owner'))
+            article_serializer = ArticleSerializer(article, many=True)
+            return JsonResponse(article_serializer.data, safe=False)   
