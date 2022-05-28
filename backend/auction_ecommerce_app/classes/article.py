@@ -13,7 +13,7 @@ class ArticleView(APIView):
     @api_view(['GET', 'POST'])
     def article_list(request):
         if request.method == 'GET':
-            article = Article.objects.all()
+            article = Article.objects.filter(is_selled=False)
             article_serializer = ArticleSerializer(article, many=True)
             return JsonResponse(article_serializer.data, safe=False)
         

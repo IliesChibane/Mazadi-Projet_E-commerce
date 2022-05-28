@@ -48,11 +48,11 @@
 
 #### Diagrammes de cas d'utilisation :
 
-            ![use_case.png](Conception/use_case.png?raw=true)
+            ![e-commerce_app_use_case_diagram.png](Conception/images/e-commerce_app%20use_case_diagram.png?raw=true)
 
 ### <u>3.2 Arboresence du site :</u>
 
-![arborescence.png](Conception/arborescence.png?raw=true)
+![arborescence.png](Conception/images/arborescence.png?raw=true)
 
 - Home : Page principale ou les différents articles sont affichées avec une barre de recherche 
 
@@ -80,14 +80,14 @@
 
 - Le site n'a pas besoin d'etre host ou de posséder un nom de domaine
 
-| <img src="Conception/react.png?raw=true" title="" alt="" width="485"> | ![](Conception/django.png?raw=true) | ![](Conception/sqlite.png?raw=true) | ![](Conception/rest-api.png?raw=true) |
-| -------------------------------------------------------------------- | -------------------------- | -------------------------- | ---------------------------- |
+| <img src="Conception/images/react.png?raw=true" title="" alt="" width="485"> | ![](Conception/images/django.png?raw=true) | ![](Conception/images/sqlite.png?raw=true) | ![](Conception/images/rest-api.png?raw=true) |
+| ---------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | -------------------------------------------- |
 
 ## 
 
 ## <u>4. Conception :</u>
 
-![](Conception/Class.png?raw=true)
+![](Conception/images/e-commerce_app_class_diagram.png?raw=true)
 
 ## <u>5. Planning :</u>
 
