@@ -1,0 +1,384 @@
+:root {
+    --bleu: rgb(24, 67, 125);
+    --orange: rgb(251, 175, 66);
+    --gris: #757373;
+    --blanc: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #18437D;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+
+input {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 3% 42%;
+    border: 0;
+    padding-left: 5%;
+    box-shadow: 0px 1px 1px gray;
+}
+
+.circle-white {
+    box-shadow: 0px 1px 1px gray;
+    background: var(--white);
+    border-radius: 100%;
+    float: left;
+    padding: 1% 1.5%;
+}
+
+::placeholder {
+    color: var(--bleu);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 100;
+}
+
+.account-section-padding-bottom {
+    padding-bottom: 120px;
+    display: block;
+    position: relative;
+}
+
+#cad {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.mazadi {
+    text-align: center;
+    margin: 200px auto 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: rgba(251, 175, 66, .5);
+    border-radius: 25px;
+    margin: 0% 15% 0% 15%;
+    padding: 5% 7% 3% 7%;
+    padding-top: 0;
+    padding-right: 0%;
+    padding-bottom: 0;
+    border: 0.1px solid rgba(208, 208, 211, 0.2);
+    box-shadow: 0px 2px 2px black;
+}
+
+.header {
+    padding: 5% 10% 5% 10%;
+}
+
+.header p {
+    color: var(--gris);
+    padding-bottom: 50%;
+}
+
+.header .title {
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7%;
+}
+
+.form-group a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#arrow {
+    transform: rotate(180deg);
+}
+
+.left-side,
+.right-side,
+.login-form {
+    display: block;
+    justify-content: space-around;
+}
+
+.left-side {
+    padding: 10% 2% 10% 1%;
+}
+
+.form-group,
+.login {
+    text-align: center;
+    padding: 7% 10%;
+}
+
+.or {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    color: var(--bleu);
+}
+
+.or span {
+    font-weight: 600;
+}
+
+hr.solid {
+    border: 0px;
+    border-top: 2px solid var(--bleu);
+    width: 100%;
+    margin: 2%;
+}
+
+.right-side {
+    flex-basis: 20%;
+    background-color: var(--blanc);
+    padding: 20% 10% 0% 10%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.login-with,
+.login-with li {
+    display: flex;
+}
+
+.login-with li,
+.login {
+    border: none;
+    border-radius: 25px;
+    background-color: var(--blanc);
+    padding: 1% 1%;
+    margin: 1% 1%;
+    justify-content: space-between;
+    box-shadow: 0px 2px 2px black;
+}
+
+.login {
+    background-color: var(--bleu);
+}
+
+.insc {
+    position: relative;
+    margin-left: 35%;
+}
+
+.header a {
+    border: 0.1px solid rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    background-color: var(--blanc);
+    justify-content: space-between;
+    box-shadow: 0px 2px 2px black;
+    padding: 10% 30%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    right: 15%;
+}
+
+.header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 55%;
+}
+
+.login {
+    padding: 3% 1%;
+}
+
+.login a {
+    font-weight: 500;
+    font-size: large;
+    color: var(--blanc);
+}
+
+.login-with a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mazadi span {
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--orange);
+    position: relative;
+    text-shadow: -1px 0 0 rgba(0, 0, 0, .2);
+}
+
+h1 {
+    font-family: 'Coiny', cursive;
+    font-size: 60px;
+    color: var(--bleu);
+    text-align: center;
+    text-shadow: -2px 3px 0 var(--orange);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--gris);
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.mazadi span::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    color: var(--bleu);
+    transition: .5s cubic-bezier( 0.175, 0.885, 0.32, 1.275);
+    transform: rotateY(25deg);
+}
+
+.mazadi span:hover::before {
+    transform: perspective(1000px) rotate(-67deg);
+}
+
+@media screen and (max-width: 1500px) {
+    .wrapper {
+        display: block;
+    }
+    .container {
+        padding: 0;
+    }
+    .left-side {
+        padding-left: 5%;
+    }
+    .login-with {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-side {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+    .header a {
+        position: relative;
+        padding: 5% 10%;
+        margin: 0;
+    }
+    .insc {
+        margin: 0;
+        margin-bottom: 10%;
+        margin-left: 25%;
+    }
+    .insc img {
+        display: none;
+    }
+    .header {
+        text-align: center;
+        align-items: center;
+        padding-top: 0%;
+    }
+    .header p {
+        padding-bottom: 15%;
+    }
+    .login-with img {
+        max-width: 15%;
+        max-height: auto;
+    }
+    .account-section-padding-bottom {
+        padding-bottom: 0;
+    }
+    #cad {
+        bottom: -5%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #cad,
+    #arrow {
+        max-width: 60%;
+        padding: 5% 0%;
+        bottom: -10%;
+        left: 5%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 250%;
+    }
+    h2 {
+        font-size: 100%;
+    }
+    .login-with a {
+        font-size: 90%;
+    }
+    #cad {
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-with a {
+        display: none;
+    }
+    .login-with img {
+        max-width: 100%;
+    }
+    .login-with li {
+        background-color: transparent;
+        box-shadow: none;
+        justify-content: space-around;
+    }
+     ::placeholder,
+    .login a,
+    .form-group a,
+    h4,
+    .title,
+    .insc a {
+        font-size: 100%;
+    }
+    input {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5% 10%;
+    }
+    #cad {
+        display: none;
+    }
+    .mazadi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
