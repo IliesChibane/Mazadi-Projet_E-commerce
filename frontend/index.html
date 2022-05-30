@@ -32,6 +32,12 @@
                             <li> <a href="">Voitures</a></li>
                             <li> <a href="">Immobilier</a></li>
                             <li> <a href="">Téléphones</a></li>
+                            <li> <a href="">Vêtements</a></li>
+                            <li> <a href="">Meubles</a></li>
+                            <li> <a href="">Informatique</a></li>
+                            <li> <a href="">Sport</a></li>
+                            <li> <a href="">Matériel</a></li>
+                            <li> <a href="">Électromenager</a></li>
                         </ul>
                     </li>
                     <li><a href="#propos" class="prp">A propos</a></li>
@@ -131,7 +137,7 @@
             <a href=""></a>
         </div>
         <div class="conteneur">
-            <div class="elements">
+            <div class="elements snaps-inline" id="elements">
                 <div class="element">
                     <img src="Resources\voitures.png" alt="">
                     <h4>Voitures</h4>
@@ -147,18 +153,42 @@
                     <h4>Téléphones</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
-
-            </div>
-            <div class="scroll">
-                <div class="circle-white">
-                    <a href=""></a>
-                    <img src="Resources\arrow.png" alt="">
+                <div class="element">
+                    <img src="Resources\clothes.jpg" alt="">
+                    <h4>Vêtements</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\meubles.jpg" alt="">
+                    <h4>Meubles</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\info.jpg" alt="">
+                    <h4>Informatique</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\sport.jpg" alt="">
+                    <h4>Sport</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\material.jpg" alt="">
+                    <h4>Matériel</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\electromenager.jpg" alt="">
+                    <h4>Électromenager</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
                 </div>
             </div>
+
         </div>
         <div class="circle-white">
             <a href=""></a>
-            <img src="Resources\mall-front.png" alt="">
+            <img src="Resources\mall-front.png">
         </div>
         <div class="ssidethrow">
             <a href="" class="circle" id="loop"></a>
@@ -223,5 +253,34 @@
 
 
 </body>
+<script>
+    const slider = document.getElementById('elements');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+    });
+</script>
 
 </html>
