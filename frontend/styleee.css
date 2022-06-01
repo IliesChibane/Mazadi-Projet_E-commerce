@@ -10,6 +10,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     background: var(--blanc);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .form_wrapper {
@@ -18,7 +21,7 @@ body {
     max-width: 100%;
     box-sizing: border-box;
     padding: 5% 10% 10% 10%;
-    margin: 8% auto 0;
+    margin: 5% auto;
     position: relative;
     z-index: 1;
     border-top: 5px solid var(--orange);
@@ -36,7 +39,6 @@ body {
     opacity: 0;
     border-radius: 25px;
     box-shadow: 0 0 2px 1px rgba(128, 128, 128, .2);
-    ;
 }
 
 h2 {
@@ -163,39 +165,25 @@ input[type="radio"] {
     border-left: 1px solid var(--blanc);
 }
 
+#arrow {
+    transform: rotate(180deg);
+}
+
 .form_container {
     display: flex;
     flex-direction: column;
 }
 
-@-webkit-keyframes check {
-    0% {
-        height: 0;
-        width: 0;
-    }
-    25% {
-        height: 0;
-        width: 7px;
-    }
-    50% {
-        height: 20px;
-        width: 7px;
-    }
-}
-
-@keyframes check {
-    0% {
-        height: 0;
-        width: 0;
-    }
-    25% {
-        height: 0;
-        width: 7px;
-    }
-    50% {
-        height: 20px;
-        width: 7px;
-    }
+.circle-white {
+    box-shadow: 0px 1px 1px gray;
+    background: var(--white);
+    border-radius: 100%;
+    float: left;
+    padding: 1% 1.5%;
+    margin-top: 0;
+    position: absolute;
+    top: 2%;
+    left: 2%;
 }
 
 @-webkit-keyframes expand {
@@ -317,5 +305,11 @@ input[type="radio"] {
     }
     .form_container .row .col_half.last {
         border-left: none;
+    }
+    #arrow {
+        max-width: 60%;
+        padding: 5% 0%;
+        bottom: -10%;
+        left: 5%;
     }
 }
