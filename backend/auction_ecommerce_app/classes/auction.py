@@ -4,7 +4,6 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.decorators import api_view
 from rest_framework.permissions import AllowAny
-from auction_ecommerce_app.classes.auction import AuctionView
 from auction_ecommerce_app.models import Article, Auction
 from auction_ecommerce_app.serializers import ArticleSerializer, AuctionSerializer
 

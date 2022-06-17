@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('authentication', '0002_alter_user_age'),
+        
     ]
 
     operations = [

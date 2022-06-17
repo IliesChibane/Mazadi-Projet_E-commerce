@@ -8,7 +8,6 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('authentication', '0002_alter_user_age'),
         ('auction_ecommerce_app', '0002_alter_article_initial_price'),
     ]
 
