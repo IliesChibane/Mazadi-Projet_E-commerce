@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styleee.css">
+    <link rel="stylesheet" href="css\styleee.css">
 </head>
 
 <body>
@@ -44,6 +44,9 @@
             <div class="">
                 <form>
                     <div class="input_field">
+                        <input type="text" name="name" placeholder="Nom d'utilisateur" />
+                    </div>
+                    <div class="input_field">
                         <input type="email" name="email" placeholder="Adresse Email" required />
                     </div>
                     <div class="input_field">
@@ -56,14 +59,12 @@
                         <input type="number" name="age" placeholder="age" required />
                     </div>
                     <div class="col_half">
-                        <div class="input_field">
-                            <input type="text" name="name" placeholder="Prénom" />
-                        </div>
+                        <textarea type="text" placeholder="Localisation" class="input_field">
+                        </textarea>
                     </div>
                     <div class="col_half">
-                        <div class="input_field">
-                            <input type="text" name="name" placeholder="Nom" required />
-                        </div>
+                        <textarea type="text" placeholder="Description" required class="input_field">
+                        </textarea>
                     </div>
                     <div class="select_arrow"></div>
             </div>
