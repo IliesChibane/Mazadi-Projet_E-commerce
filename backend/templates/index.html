@@ -78,11 +78,13 @@
                     <a href=""></a>
                 </div>
                 <div class="landing">
-                    <img src="Resources\landing.png" alt="landing page picture">
+                    {% load static %} 
+                    <img src="{% 'Resources\landing.png' %}" alt="landing page picture">
                 </div>
                 <div class="circle-bigger" id="cartcircle">
                     <a href=""></a>
-                    <img src="Resources\cart.png" id="im">
+                    {% load static %} 
+                    <img src="{% static 'Resources\cart.png' %}" id="im">
                 </div>
             </div>
         </div>
@@ -90,7 +92,8 @@
             <div class="circlee">
                 <a href=""></a>
             </div>
-            <img src="Resources\watch.png" id="imm">
+            {% load static %} 
+            <img src="{% static 'Resources\watch.png' %}" id="imm">
             <div class="circle-bigger" id="leftsidecircle">
                 <a href=""></a>
             </div>
@@ -99,18 +102,20 @@
         </div>
     </div>
     <div class="throw">
-        <img src="Resources\star.png">
+        {% load static %} 
+        <img src="{% static 'Resources\star.png' %}">
     </div>
     <section class="pp">
         <h2 class="pro" id="pro">C'est quoi notre projet</h2>
         <div class="loop">
-            <img src="Resources\loop.png">
+            <img src="{% static 'Resources\loop.png' %}">
         </div>
         <div class="row">
             <div class="col-2">
                 <div class="pres">
                     <div class="head">
-                        <img src="Resources\flag.png">
+                        {% load static %} 
+                        <img src="{% 'Resources\flag.png' %}">
                         <h3>Projet</h3>
                     </div>
                     <p> Ce projet à pour but de réaliser une application web d'e-commerce implémentant la stratégie de l'enchère anglaise et en utilisant une RESTFUL API. Il est réalisé par :
@@ -125,12 +130,14 @@
                 </div>
             </div>
             <div class="col-2">
-                <img src="Resources\fig1.png" id="fig">
+                {% load static %} 
+                <img src="{% static 'Resources\fig1.png' %}" id="fig">
             </div>
         </div>
     </section>
     <div class="throw">
-        <img src="Resources\cadeau.png" id="imm">
+        {% load static %} 
+        <img src="{% static 'Resources\cadeau.png' %}" id="imm">
     </div>
     <section class="cat-pad">
         <div class="categories-head">
@@ -138,7 +145,8 @@
             <div class="circle-bigger">
                 <a href=""></a>
             </div>
-            <img src="Resources\mall-side.png" id="imm">
+            {% load static %} 
+            <img src="{% static 'Resources\mall-side.png' %}" id="imm">
         </div>
         <div class="circle" id="giant">
             <a href=""></a>
@@ -146,22 +154,26 @@
         <div class="conteneur">
             <div class="elements snaps-inline" id="elements">
                 <div class="element">
-                    <img src="Resources\voitures.png" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\voitures.png' %}" alt="">
                     <h4>Voitures</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\maison.png" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\maison.png' %}" alt="">
                     <h4>Immobilier</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\tel.png" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\tel.png' %}" alt="">
                     <h4>Téléphones</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\clothes.jpg" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\clothes.jpg' %}" alt="">
                     <h4>Vêtements</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
