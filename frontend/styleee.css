@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     background: var(--blanc);
     box-sizing: border-box;
     margin: 0;
@@ -98,9 +98,7 @@ label {
     width: 30px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input {
     width: 100%;
     padding: 8px 10px 9px 35px;
     height: 35px;
@@ -113,14 +111,13 @@ input[type="password"] {
     transition: all 0.30s ease-in-out;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
+input:focus {
     -webkit-box-shadow: 0 0 2px 1px var(--orange);
     -moz-box-shadow: 0 0 2px 1px var(--orange);
     box-shadow: 0 0 2px 1px var(--orange);
     border: 1px solid var(--orange);
     background: var(--blanc);
+    border-radius: 25px;
 }
 
 input[type="submit"] {
@@ -129,18 +126,17 @@ input[type="submit"] {
     width: 50%;
     cursor: pointer;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
     border-radius: 25px;
     box-shadow: 0 0 2px 1px rgba(128, 128, 128, .2);
-    padding: 10px 15px;
     font-weight: 400;
-    margin: 5%;
-    margin-bottom: 10px;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding: 7px 15px 30px 15px;
 }
 
 input[type="submit"]:hover,
@@ -165,6 +161,35 @@ input[type="radio"] {
     border-left: 1px solid var(--blanc);
 }
 
+#loop {
+    float: right;
+    right: 10px;
+    position: absolute;
+    padding-bottom: 10%;
+}
+
+#star {
+    float: right;
+    right: 10px;
+    position: absolute;
+    top: 100%;
+}
+
+#cadenas {
+    float: right;
+    right: 20%;
+    position: absolute;
+    top: 10%;
+    z-index: 2;
+}
+
+#talk {
+    float: left;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+}
+
 #arrow {
     transform: rotate(180deg);
 }
@@ -184,6 +209,10 @@ input[type="radio"] {
     position: absolute;
     top: 2%;
     left: 2%;
+}
+
+#offer {
+    max-height: 10px;
 }
 
 @-webkit-keyframes expand {

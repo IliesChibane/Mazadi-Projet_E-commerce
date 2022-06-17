@@ -212,6 +212,10 @@ hr.solid {
     color: var(--blanc);
 }
 
+.login:hover {
+    background-color: var(--orange);
+}
+
 .login-with a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -295,6 +299,13 @@ h2 {
         margin: 0;
         margin-bottom: 10%;
         margin-left: 25%;
+    }
+    .insc a:hover {
+        background-color: var(--bleu);
+        color: var(--blanc);
+    }
+    .insc:hover {
+        color: var(--orange);
     }
     .insc img {
         display: none;
