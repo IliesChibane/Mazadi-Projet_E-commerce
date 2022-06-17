@@ -183,22 +183,26 @@
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\info.jpg" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\info.jpg' %}" alt="">
                     <h4>Informatique</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\sport.jpg" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\sport.jpg' %}" alt="">
                     <h4>Sport</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\material.jpg" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\material.jpg' %}" alt="">
                     <h4>Matériel</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    <img src="Resources\electromenager.jpg" alt="">
+                    {% load static %} 
+                    <img src="{% static 'Resources\electromenager.jpg' %}" alt="">
                     <h4>Électromenager</h4>
                     <a class="btnn" href="">Voir Catégorie</a>
                 </div>
@@ -207,7 +211,8 @@
         </div>
         <div class="circle-white">
             <a href=""></a>
-            <img src="Resources\mall-front.png">
+            {% load static %} 
+            <img src="{% 'Resources\mall-front.png' %}">
         </div>
         <div class="ssidethrow">
             <a href="" class="circle" id="loop"></a>
