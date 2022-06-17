@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazadi | Site Enchères</title>
+    {% load static %}   
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% load static %}   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {% load static %}  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {% load static %}  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap" rel="stylesheet">
+    {% load static %}  
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Coiny&display=swap' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="quatercircle" id="leftside">
+        <a href=""></a>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                {% load static %} 
+                <img src="{% static 'Resources\LogoArtboard 1 copy 2.png' %}" id="logo" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a>Accueil</a></li>
+                    <li><a href="#pro">Projet</a></li>
+                    <li class="dropdown-menu">
+                        <a href="#categ" class="dropdown">Catégories</a>
+                        <ul class="submenu">
+                            <li> <a href="">Voitures</a></li>
+                            <li> <a href="">Immobilier</a></li>
+                            <li> <a href="">Téléphones</a></li>
+                            <li> <a href="">Vêtements</a></li>
+                            <li> <a href="">Meubles</a></li>
+                            <li> <a href="">Informatique</a></li>
+                            <li> <a href="">Sport</a></li>
+                            <li> <a href="">Matériel</a></li>
+                            <li> <a href="">Électromenager</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#propos" class="prp">A propos</a></li>
+                </ul>
+            </nav>
+            <div class="inscrire">
+                <a class="btn" id="up" href="inscription.html">S'inscrire</a>
+            </div>
+        </div>
+    </div>
+    <div class="halfcircle" id="rightside">
+        <a href=""></a>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <div class="content">
+                <h1 class="double-layer">Mazadi</h1>
+                <h5>Votre Guide Aux Enchères.</h5>
+                <p>Nous mettons constamment de nouvelles propriétés <br> sur le marché, alors continuez à visiter notre site web <br> pour ne pas manquer la prochaine opportunité.</p>
+                <div class="same">
+                    <a class="btn" id="down" href="inscription.html">S'inscrire
+                    </a>
+                    {% load static %} 
+                    <img src="{% static 'Resources\coin.png' %}" id="coin">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="visuals">
+                <div class="circle" id="upp">
+                    <a href=""></a>
+                </div>
+                <div class="landing">
+                    <img src="Resources\landing.png" alt="landing page picture">
+                </div>
+                <div class="circle-bigger" id="cartcircle">
+                    <a href=""></a>
+                    <img src="Resources\cart.png" id="im">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="circlee">
+                <a href=""></a>
+            </div>
+            <img src="Resources\watch.png" id="imm">
+            <div class="circle-bigger" id="leftsidecircle">
+                <a href=""></a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="throw">
+        <img src="Resources\star.png">
+    </div>
+    <section class="pp">
+        <h2 class="pro" id="pro">C'est quoi notre projet</h2>
+        <div class="loop">
+            <img src="Resources\loop.png">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="pres">
+                    <div class="head">
+                        <img src="Resources\flag.png">
+                        <h3>Projet</h3>
+                    </div>
+                    <p> Ce projet à pour but de réaliser une application web d'e-commerce implémentant la stratégie de l'enchère anglaise et en utilisant une RESTFUL API. Il est réalisé par :
+                        <ul>
+                            <li>AIT AMARA Mohamed </li>
+                            <li>BOUROUINA Rania</li>
+                            <li>CHIBANE Ilies</li>
+                            <li>HAMMAL Ayoub</li>
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="Resources\fig1.png" id="fig">
+            </div>
+        </div>
+    </section>
+    <div class="throw">
+        <img src="Resources\cadeau.png" id="imm">
+    </div>
+    <section class="cat-pad">
+        <div class="categories-head">
+            <h2 id="categ">Catégories</h2>
+            <div class="circle-bigger">
+                <a href=""></a>
+            </div>
+            <img src="Resources\mall-side.png" id="imm">
+        </div>
+        <div class="circle" id="giant">
+            <a href=""></a>
+        </div>
+        <div class="conteneur">
+            <div class="elements snaps-inline" id="elements">
+                <div class="element">
+                    <img src="Resources\voitures.png" alt="">
+                    <h4>Voitures</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\maison.png" alt="">
+                    <h4>Immobilier</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\tel.png" alt="">
+                    <h4>Téléphones</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\clothes.jpg" alt="">
+                    <h4>Vêtements</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\meubles.jpg" alt="">
+                    <h4>Meubles</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\info.jpg" alt="">
+                    <h4>Informatique</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\sport.jpg" alt="">
+                    <h4>Sport</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\material.jpg" alt="">
+                    <h4>Matériel</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+                <div class="element">
+                    <img src="Resources\electromenager.jpg" alt="">
+                    <h4>Électromenager</h4>
+                    <a class="btnn" href="">Voir Catégorie</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="circle-white">
+            <a href=""></a>
+            <img src="Resources\mall-front.png">
+        </div>
+        <div class="ssidethrow">
+            <a href="" class="circle" id="loop"></a>
+            <img src="Resources\cup.png" class="loop" alt="">
+        </div>
+    </section>
+    <section>
+        <h2 id="propos">A propos</h2>
+        <div class="grid">
+            <div class="col-left">
+
+                <div class="message-left">
+                    <p> Ce site a pour but de permettre à n'importe <br> quel utilisateur de mettre des articles divers à <br>l'enchère et de pouvoir participer à des enchères <br>pour obtenir l'article qu'il souhaite.</p>
+                </div>
+                <div class="figure-left">
+                    <img src="Resources\cadeau.png">
+                </div>
+                <div class="message-left">
+                    <p>L'administration du site n'est en aucun cas <br> responsable sur les annonces et les propositions <br> bidons. Notre plateforme sert comme intermédiaire <br> entre l'annonceur et l'utilisateur.</p>
+                </div>
+                <div class="figure-left">
+                    <img src="Resources\offer.png" alt="">
+                </div>
+                <div class="message-left">
+                    <p>Merci.</p>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="message-right">
+                    <p>L'utilisateur peut proposer un <br> prix pour une annonce qui n'a <br> pas atteint le prix fixé par <br> l'annonceur. Ce prix doit être <br> inclu entre la meilleure <br> proposition et le prix de l'annonce.</p>
+                </div>
+                <div class="figure-right">
+                    <img src="Resources\talk.png" id="reste">
+                    <img src="Resources\idea.png">
+                </div>
+                <div class="message-right">
+                    <p>L'annonceur ne peut en aucun <br> cas proposer un prix pour sa <br> propre annonce.
+                    </p>
+                </div>
+                <div class="figure-right">
+                    <img src="Resources\discuss.png">
+                </div>
+                <div class="message-right">
+                    <p>Le site n'est responsable sur la livraison des <br> produits ajoutés au panier lors d'un shopping <br> fait par un utilisateur quelconque et validé par <br> celui-ci. Le client peut contacter la boutique <br> en ligne pour se mettre
+                        d'accord sur comment se fera la livraison du produit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="mazadi">
+            <span data-title="M">M</span>
+            <span data-title="A">A</span>
+            <span data-title="Z">Z</span>
+            <span data-title="A">A</span>
+            <span data-title="D">D</span>
+            <span data-title="I">I</span>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script>
+    const slider = document.getElementById('elements');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+    });
+</script>
+
+</html>
