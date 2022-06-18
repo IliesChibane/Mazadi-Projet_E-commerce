@@ -1301,6 +1301,22 @@ h3.tittle-w3l {
     padding: 20px 0;
 }
 
+#arrow {
+    transform: rotate(180deg);
+}
+
+.circle-white {
+    box-shadow: 0px 1px 1px gray;
+    background: var(--white);
+    border-radius: 100%;
+    float: left;
+    padding: 1% 1.5%;
+    margin-top: 0;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
 .w3l-specilamk {
     border: 1px solid var(--orange);
     padding: 20px;
