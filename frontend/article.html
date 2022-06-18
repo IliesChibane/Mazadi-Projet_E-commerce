@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazadi | Création compte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\styleee.css">
+</head>
+
+<body>
+    <div class="circle-white">
+        <a href="inscription.html">
+            <img src="Resources\arrow.png" id="arrow">
+        </a>
+    </div>
+
+    <div id="loop">
+        <img src="Resources\loop.png" alt="">
+    </div>
+    <div id="star">
+        <img src="Resources\star.png" alt="">
+    </div>
+    <div id="cadenas">
+        <img src="Resources\cadenas.png" alt="">
+    </div>
+    <div id="talk">
+        <img src="Resources\talk.png" alt="">
+    </div>
+    <div id="offer">
+        <img src="Resources\offer.png" alt="">
+    </div>
+
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>Ajouter un article aux enchères</h2>
+            </div>
+            <div class="">
+                <form>
+                    <div class="input_field">
+                        <input type="text" name="name" placeholder="Nom article" />
+                    </div>
+                    <div class="input_field">
+                        <input type="text" name="Description" placeholder="Description" required />
+                    </div>
+                    <div class="input_field">
+                        <input type="number" name="price" placeholder="Prix Initial" required />
+                    </div>
+                    <div class="input_field">
+                        <p>Date expiration</p>
+                        <input type="date" name="date" required />
+                    </div>
+                    <label for="categories">Catégories</label>
+                    <select class="input_field" name="categories" id="categories">
+                            <option value="Voitures">Voitures</option>
+                            <option value="Téléphones">Téléphones</option>
+                            <option value="Meubles">Meubles</option>
+                            <option value="Sport">Sport</option>
+                        </select>
+
+            </div>
+            <div class="select_arrow"></div>
+        </div>
+        <input class="button" type="submit" value="Ajouter" />
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

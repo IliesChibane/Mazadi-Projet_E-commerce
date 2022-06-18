@@ -1318,7 +1318,7 @@ h3.tittle-w3l {
 }
 
 .footer-top {
-    background: rgb(28, 34, 36);
+    background: var(--bleu);
     margin-top: 5%;
 }
 
@@ -1350,35 +1350,6 @@ h3.tittle-w3l {
     transform: rotate(-31deg);
     -ms-transform: rotate(-31deg);
     -webkit-transform: rotate(-31deg);
-}
-
-.mazadi {
-    text-align: center;
-    margin: 200px auto 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.mazadi span {
-    font-size: 80px;
-    font-weight: 700;
-    color: var(--bleu);
-    position: relative;
-    text-shadow: -1px 0 0 rgba(0, 0, 0, .2);
-}
-
-.mazadi span::before {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    color: var(--orange);
-    transition: .5s cubic-bezier( 0.175, 0.885, 0.32, 1.275);
-    transform: rotateY(25deg);
-}
-
-.mazadi span:hover::before {
-    transform: perspective(1000px) rotate(-67deg);
 }
 
 p.footer-main {

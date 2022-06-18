@@ -88,6 +88,7 @@ label {
     border-radius: 25px;
 }
 
+select,
 textarea {
     border: none;
     overflow: auto;
@@ -103,6 +104,7 @@ textarea {
 .col_half .input_field textarea {
     padding: 30px;
     margin: 3px;
+    margin-bottom: 5%;
 }
 
 .input_field>span {
@@ -200,6 +202,13 @@ input[type="radio"] {
     position: absolute;
     top: 10%;
     z-index: 2;
+}
+
+.input_field p {
+    font-size: 14px;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #talk {
