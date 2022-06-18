@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylee.css' %}">
 </head>
 
 <body>
     <div class="section-header">
         <div class="circle-white">
-            <a href="index.html">
+            <a href="{% url 'home' %}">
                 <img src="{% static 'Resources\arrow.png' %}" id="arrow">
             </a>
 
@@ -35,7 +36,7 @@
                         </li>
                         <li>
                             <img src="{% static 'Resources/fb.png'%}" alt="">
-                            <a href="">Se connecter avec Facebook</a>
+                            <a href="authentication/login">Se connecter avec Facebook</a>
                         </li>
                     </ul>
                     <div class="or">
@@ -66,7 +67,7 @@
                         <p>Inscrivez-vous et créez votre compte.
                         </p>
                         <div class="insc">
-                            <a href="sinup.html">S'inscrire</a>
+                            <a href="{% url 'signup' %}">S'inscrire</a>
                             <img src="{% static 'Resources/med.png' %}" alt="">
                         </div>
 

@@ -6,16 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mazadi | Site Enchères</title>
-    {% load static %}   
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    {% load static %}   
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    {% load static %}  
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    {% load static %}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap" rel="stylesheet">
-    {% load static %}  
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
 <body>
@@ -25,7 +21,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                {% load static %} 
+                {% load static %}
                 <img src="{% static 'Resources\LogoArtboard 1 copy 2.png' %}" id="logo" width="125px">
             </div>
             <nav>
@@ -35,22 +31,19 @@
                     <li class="dropdown-menu">
                         <a href="#categ" class="dropdown">Catégories</a>
                         <ul class="submenu">
-                            <li> <a href="">Voitures</a></li>
-                            <li> <a href="">Immobilier</a></li>
-                            <li> <a href="">Téléphones</a></li>
-                            <li> <a href="">Vêtements</a></li>
-                            <li> <a href="">Meubles</a></li>
-                            <li> <a href="">Informatique</a></li>
-                            <li> <a href="">Sport</a></li>
-                            <li> <a href="">Matériel</a></li>
-                            <li> <a href="">Électromenager</a></li>
+                            <li> <a href="categories2.html">All</a></li>
+                            <li> <a href="voitures.html">Voitures</a></li>
+                            <li> <a href="telephones.html">Téléphones</a></li>
+                            <li> <a href="meubles.html">Meubles</a></li>
+                            <li> <a href="sport.html">Sport</a></li>
                         </ul>
                     </li>
-                    <li><a href="#propos" class="prp">A propos</a></li>
+                    <li><a href="#propos" class="prp">A propos
+                    </a></li>
                 </ul>
             </nav>
-            <div class="inscrire">
-                <a class="btn" id="up" href="{% url 'inscription' %}">S'inscrire</a>
+            <div class="inscrire" id="profile">
+                <a class="btn" id="up" href="profile.html">Voir Profile</a>
             </div>
         </div>
     </div>
@@ -64,9 +57,9 @@
                 <h5>Votre Guide Aux Enchères.</h5>
                 <p>Nous mettons constamment de nouvelles propriétés <br> sur le marché, alors continuez à visiter notre site web <br> pour ne pas manquer la prochaine opportunité.</p>
                 <div class="same">
-                    <a class="btn" id="down" href="{% url 'inscription' %}">S'inscrire
+                    <a class="btn" id="down" href="article.html">Mettre article aux enchères
                     </a>
-                    {% load static %} 
+                    {% load static %}
                     <img src="{% static 'Resources\coin.png' %}" id="coin">
                 </div>
 
@@ -78,12 +71,12 @@
                     <a href=""></a>
                 </div>
                 <div class="landing">
-                    {% load static %} 
+                    {% load static %}
                     <img src="{% static 'Resources\landing.png' %}" alt="landing page picture">
                 </div>
                 <div class="circle-bigger" id="cartcircle">
                     <a href=""></a>
-                    {% load static %} 
+                    {% load static %}
                     <img src="{% static 'Resources\cart.png' %}" id="im">
                 </div>
             </div>
@@ -92,7 +85,7 @@
             <div class="circlee">
                 <a href=""></a>
             </div>
-            {% load static %} 
+            {% load static %}
             <img src="{% static 'Resources\watch.png' %}" id="imm">
             <div class="circle-bigger" id="leftsidecircle">
                 <a href=""></a>
@@ -102,19 +95,20 @@
         </div>
     </div>
     <div class="throw">
-        {% load static %} 
+        {% load static %}
         <img src="{% static 'Resources\star.png' %}">
     </div>
     <section class="pp">
         <h2 class="pro" id="pro">C'est quoi notre projet</h2>
         <div class="loop">
+            {% load static %}
             <img src="{% static 'Resources\loop.png' %}">
         </div>
         <div class="row">
             <div class="col-2">
                 <div class="pres">
                     <div class="head">
-                        {% load static %} 
+                        {% load static %}
                         <img src="{% static 'Resources\flag.png' %}">
                         <h3>Projet</h3>
                     </div>
@@ -130,13 +124,13 @@
                 </div>
             </div>
             <div class="col-2">
-                {% load static %} 
+                {% load static %}
                 <img src="{% static 'Resources\fig1.png' %}" id="fig">
             </div>
         </div>
     </section>
     <div class="throw">
-        {% load static %} 
+        {% load static %}
         <img src="{% static 'Resources\cadeau.png' %}" id="imm">
     </div>
     <section class="cat-pad">
@@ -145,7 +139,7 @@
             <div class="circle-bigger">
                 <a href=""></a>
             </div>
-            {% load static %} 
+            {% load static %}
             <img src="{% static 'Resources\mall-side.png' %}" id="imm">
         </div>
         <div class="circle" id="giant">
@@ -154,68 +148,40 @@
         <div class="conteneur">
             <div class="elements snaps-inline" id="elements">
                 <div class="element">
-                    {% load static %} 
+                    {% load static %}
                     <img src="{% static 'Resources\voitures.png' %}" alt="">
                     <h4>Voitures</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
+                    <a class="btnn" href="voitures.html">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    {% load static %} 
-                    <img src="{% static 'Resources\maison.png' %}" alt="">
-                    <h4>Immobilier</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
-                </div>
-                <div class="element">
-                    {% load static %} 
+                    {% load static %}
                     <img src="{% static 'Resources\tel.png' %}" alt="">
                     <h4>Téléphones</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
+                    <a class="btnn" href="telephones.html">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    {% load static %} 
-                    <img src="{% static 'Resources\clothes.jpg' %}" alt="">
-                    <h4>Vêtements</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
-                </div>
-                <div class="element">
+                    {% load static %}
                     <img src="{% static 'Resources\meubles.jpg' %}" alt="">
                     <h4>Meubles</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
+                    <a class="btnn" href="meubles.html">Voir Catégorie</a>
                 </div>
                 <div class="element">
-                    {% load static %} 
-                    <img src="{% static 'Resources\info.jpg' %}" alt="">
-                    <h4>Informatique</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
-                </div>
-                <div class="element">
-                    {% load static %} 
+                    {% load static %}
                     <img src="{% static 'Resources\sport.jpg' %}" alt="">
                     <h4>Sport</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
-                </div>
-                <div class="element">
-                    {% load static %} 
-                    <img src="{% static 'Resources\material.jpg' %}" alt="">
-                    <h4>Matériel</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
-                </div>
-                <div class="element">
-                    {% load static %} 
-                    <img src="{% static 'Resources\electromenager.jpg' %}" alt="">
-                    <h4>Électromenager</h4>
-                    <a class="btnn" href="">Voir Catégorie</a>
+                    <a class="btnn" href="sport.html">Voir Catégorie</a>
                 </div>
             </div>
 
         </div>
         <div class="circle-white">
             <a href=""></a>
-            {% load static %} 
+            {% load static %}
             <img src="{% static 'Resources\mall-front.png' %}">
         </div>
         <div class="ssidethrow">
             <a href="" class="circle" id="loop"></a>
+            {% load static %}
             <img src="{% static 'Resources\cup.png' %}" class="loop" alt="">
         </div>
     </section>
@@ -228,12 +194,14 @@
                     <p> Ce site a pour but de permettre à n'importe <br> quel utilisateur de mettre des articles divers à <br>l'enchère et de pouvoir participer à des enchères <br>pour obtenir l'article qu'il souhaite.</p>
                 </div>
                 <div class="figure-left">
+                    {% load static %}
                     <img src="{% static 'Resources\cadeau.png' %}">
                 </div>
                 <div class="message-left">
                     <p>L'administration du site n'est en aucun cas <br> responsable sur les annonces et les propositions <br> bidons. Notre plateforme sert comme intermédiaire <br> entre l'annonceur et l'utilisateur.</p>
                 </div>
                 <div class="figure-left">
+                    {% load static %}
                     <img src="{% static 'Resources\offer.png' %}" alt="">
                 </div>
                 <div class="message-left">
@@ -245,7 +213,9 @@
                     <p>L'utilisateur peut proposer un <br> prix pour une annonce qui n'a <br> pas atteint le prix fixé par <br> l'annonceur. Ce prix doit être <br> inclu entre la meilleure <br> proposition et le prix de l'annonce.</p>
                 </div>
                 <div class="figure-right">
+                    {% load static %}
                     <img src="{% static 'Resources\talk.png' %}" id="reste">
+                    {% load static %}
                     <img src="{% static 'Resources\idea.png' %}">
                 </div>
                 <div class="message-right">
@@ -253,6 +223,7 @@
                     </p>
                 </div>
                 <div class="figure-right">
+                    {% load static %}
                     <img src="{% static 'Resources\discuss.png' %}">
                 </div>
                 <div class="message-right">
@@ -306,5 +277,8 @@
         console.log(walk);
     });
 </script>
+
+
+
 
 </html>

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    {% load static %}
     <link rel="stylesheet" href="{% static 'styleee.css' %}">
 </head>
 
@@ -26,24 +27,27 @@
                 <h2>Form D'inscription</h2>
             </div>
             <div class="">
-                <form>
+                <form action='/authentication/user/' method = "post">
                     <div class="input_field"> <span><i aria-hidden="true" ></i></span>
                         <input type="email" name="email" placeholder="Adresse Email" required />
+                    </div>
+                    <div class="input_field"> <span><i aria-hidden="true" ></i></span>
+                        <input type="text" name="username" placeholder="Nom d'utilisateur" required />
                     </div>
                     <div class="input_field"> <span><i aria-hidden="true" ></i></span>
                         <input type="password" name="password" placeholder="Mot de passe" required />
                     </div>
                     <div class="input_field"> <span><i aria-hidden="true" ></i></span>
-                        <input type="password" name="password" placeholder="Réecrire Mot de passe" required />
+                        <input type="password" name="re_password" placeholder="Réecrire Mot de passe" required />
                     </div>
                     <div class="col_half">
                         <div class="input_field"> <span><i aria-hidden="true" ></i></span>
-                            <input type="text" name="name" placeholder="Prénom" />
+                            <input type="number" name="age" placeholder="Age" />
                         </div>
                     </div>
                     <div class="col_half">
                         <div class="input_field"> <span><i aria-hidden="true" ></i></span>
-                            <input type="text" name="name" placeholder="Nom" required />
+                            <input type="text" name="localisation" placeholder="Localisation" required />
                         </div>
                     </div>
                     <div class="select_arrow"></div>
