@@ -4,6 +4,7 @@ from rest_framework.decorators import permission_classes
 from rest_framework.permissions import AllowAny
 from authentication.models import User
 from authentication.serializers import UserSerializer
+from django.shortcuts import render
 
 class User_view(APIView):
 
@@ -23,7 +24,7 @@ class User_view(APIView):
         except Exception as e:
             return Response({'errors': e.args[0]})
 
-        return Response({'success': 'User created successfully!'}, status=200)
+        return render(request, 'inscription.html')
 
     def get(self, request):
             
@@ -38,7 +39,7 @@ class User_view(APIView):
         data['success'] = 'User logged in successfully'
 
 
-        return Response(data, status=200)
+        return render(request, 'inscription.html')
 
 
         

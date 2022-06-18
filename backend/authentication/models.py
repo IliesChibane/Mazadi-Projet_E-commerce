@@ -85,7 +85,7 @@ class User(AbstractBaseUser):
 		if cls.objects.filter(email=email).exists():
 			errors.append('Email already exists')
 
-		if age < 16:
+		if int(age) < 16:
 			errors.append('You are under age for creating an account')
 
 		if errors:
