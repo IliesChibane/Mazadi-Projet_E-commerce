@@ -76,6 +76,7 @@ label {
 .col_half {
     width: 50%;
     float: left;
+    padding-top: 5%;
 }
 
 .input_field {
@@ -85,6 +86,23 @@ label {
     animation: bounce 0.6s ease-out;
     box-shadow: 0 0 2px 1px rgba(128, 128, 128, .2);
     border-radius: 25px;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col_half .input_field,
+.col_half .input_field textarea {
+    padding: 30px;
+    margin: 3px;
 }
 
 .input_field>span {
@@ -111,7 +129,8 @@ input {
     transition: all 0.30s ease-in-out;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     -webkit-box-shadow: 0 0 2px 1px var(--orange);
     -moz-box-shadow: 0 0 2px 1px var(--orange);
     box-shadow: 0 0 2px 1px var(--orange);
@@ -314,6 +333,9 @@ input[type="radio"] {
     }
     .form_wrapper {
         padding: 1%;
+    }
+    #cadenas {
+        display: none;
     }
 }
 
