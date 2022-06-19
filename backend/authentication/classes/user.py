@@ -18,7 +18,7 @@ class User_view(APIView):
         age = request.data.get('age')
         localisation = request.data.get('localisation')
         re_password = request.data.get('re_password')
-        
+        print(email)
         try:
             user = User.register(email, username, password, re_password, age, localisation)
         except Exception as e:

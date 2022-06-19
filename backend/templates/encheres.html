@@ -18,7 +18,7 @@
 
 <body>
     <div class="circle-white">
-        <a href="profile.html">
+        <a href="{% url 'profile' %}">
             {% load static %}
             <img src="{% static 'Resources\arrow.png' %}" id="arrow">
         </a>
@@ -32,12 +32,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index2.html">Accueil</a></li>
-                    <li><a href="index2.html">Projet</a></li>
+                    <li><a href="{% url 'home_user' %}">Accueil</a></li>
+                    <li><a href="{% url 'home_user' %}">Projet</a></li>
                     <li class="dropdown-menu">
-                        <a href="categories.html" class="dropdown">Catégories</a>
+                        <a href="{% url 'categories2' %}" class="dropdown">Catégories</a>
                         <ul class="submenu">
-                            <li> <a href="categories2.html">All</a></li>
+                            <li> <a href="{% url 'categories2' %}">All</a></li>
                             <li> <a href="">Voitures</a></li>
                             <li> <a href="">Téléphones</a></li>
                             <li> <a href="">Meubles</a></li>
@@ -45,7 +45,7 @@
 
                         </ul>
                     </li>
-                    <li><a href="index2.html" class="prp">A propos</a></li>
+                    <li><a href="{% url 'home_user' %}" class="prp">A propos</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,14 +76,14 @@
                                     <img src="{% static 'Resources/bgtjpg.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Buggatti</a>
+                                        <a href="{% url 'details' %}">Buggatti</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">14900000 DZD</span>
@@ -100,7 +100,7 @@
                                     <img src="{% static 'Resources/merc.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -108,7 +108,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Mercedes Benz</a>
+                                        <a href="{% url 'details' %}">Mercedes Benz</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">52099 DZD</span>
@@ -124,14 +124,14 @@
                                     <img src="{% static 'Resources/oppo.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Oppo F9</a>
+                                        <a href="{% url 'details' %}">Oppo F9</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">7800 DZD</span>
@@ -148,7 +148,7 @@
                                     <img src="{% static 'Resources/glx.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -156,7 +156,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Samsung Galaxy Z Flip</a>
+                                        <a href="{% url 'details' %}">Samsung Galaxy Z Flip</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">39999 DZD</span>
@@ -172,13 +172,13 @@
                                     <img src="{% static 'Resources/chev.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Table de Nuit</a>
+                                        <a href="{% url 'details' %}">Table de Nuit</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">1500 DZD</span>
@@ -194,7 +194,7 @@
                                     <img src="{% static 'Resources/comment-choisir-sa-corde-a-sauter.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -202,7 +202,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Corde à sauter</a>
+                                        <a href="{% url 'details' %}">Corde à sauter</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">1199 DZD</span>
@@ -218,7 +218,7 @@
                                     <img src="{% static 'Resources/lit.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -226,7 +226,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Lit</a>
+                                        <a href="{% url 'details' %}">Lit</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">2000 DZD</span>

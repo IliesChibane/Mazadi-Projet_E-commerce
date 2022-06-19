@@ -19,7 +19,7 @@
 
 <body>
     <div class="circle-white">
-        <a href="index2.html">
+        <a href="{% url 'home_user' %}">
             {% load static %}
             <img src="{% static 'Resources\arrow.png' %}" id="arrow">
         </a>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <a href="encheres.html" class="btnn">Voir articles mits aux enchères</a>
+                    <a href="{% url 'encheres' %}" class="btnn">Voir articles mits aux enchères</a>
                 </div>
             </div>
             <div class="row">

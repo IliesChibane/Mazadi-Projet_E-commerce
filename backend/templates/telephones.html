@@ -18,32 +18,34 @@
 
 <body>
     <div class="circle-white">
-        <a href="categories.html">
-            <img src="Resources\arrow.png" id="arrow">
+        <a href="{% url 'categories2' %}">
+            {% load static %}
+            <img src="{% static 'Resources\arrow.png' %}" id="arrow">
         </a>
 
     </div>
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="Resources\LogoArtboard 1 copy 2.png" id="logo" width="125px">
+                {% load static %}
+                <img src="{% static 'Resources\LogoArtboard 1 copy 2.png' %}" id="logo" width="125px">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index2.html">Accueil</a></li>
-                    <li><a href="index2.html">Projet</a></li>
+                    <li><a href="{% url 'home_user' %}">Accueil</a></li>
+                    <li><a href="{% url 'home_user' %}">Projet</a></li>
                     <li class="dropdown-menu">
-                        <a href="categories.html" class="dropdown">Catégories</a>
+                        <a href="{% url 'categories2' %}" class="dropdown">Catégories</a>
                         <ul class="submenu">
-                            <li> <a href="categories2.html">All</a></li>
-                            <li> <a href="">Voitures</a></li>
-                            <li> <a href="">Téléphones</a></li>
-                            <li> <a href="">Meubles</a></li>
-                            <li> <a href="">Sport</a></li>
+                            <li> <a href="{% url 'categories2' %}">All</a></li>
+                            <li> <a href="{% url 'voitures' %}">Voitures</a></li>
+                            <li> <a href="{% url 'telephones' %}">Téléphones</a></li>
+                            <li> <a href="{% url 'meubles' %}">Meubles</a></li>
+                            <li> <a href="{% url 'sport' %}">Sport</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="index2.html" class="prp">A propos</a></li>
+                    <li><a href="{% url 'home_user' %}" class="prp">A propos</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,7 +72,8 @@
                         <div class="col-md-4 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
                                 <div class="men-thumb-item">
-                                    <img src="Resources/oppo.jpg" alt="">
+                                    {% load static %}
+                                    <img src="{% static 'Resources/oppo.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
                                             <a href="details.html" class="link-product-add-cart">Quick View</a>
@@ -93,7 +96,8 @@
                         <div class="col-md-4 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
                                 <div class="men-thumb-item">
-                                    <img src="Resources/iph.jpg" alt="">
+                                    {% load static %}
+                                    <img src="{% static 'Resources/iph.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
                                             <a href="details.html" class="link-product-add-cart">Quick View</a>
@@ -116,7 +120,8 @@
                         <div class="col-md-4 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
                                 <div class="men-thumb-item">
-                                    <img src="Resources/glx.jpg" alt="">
+                                    {% load static %}
+                                    <img src="{% static 'Resources/glx.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
                                             <a href="details.html" class="link-product-add-cart">Quick View</a>
@@ -139,7 +144,8 @@
                         <div class="col-md-4 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
                                 <div class="men-thumb-item">
-                                    <img src="Resources/oppo.jpg" alt="">
+                                    {% load static %}
+                                    <img src="{% static 'Resources/oppo.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
                                             <a href="details.html" class="link-product-add-cart">Quick View</a>
@@ -162,7 +168,8 @@
                         <div class="col-md-4 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
                                 <div class="men-thumb-item">
-                                    <img src="Resources/iph.jpg" alt="">
+                                    {% load static %}
+                                    <img src="{% static 'Resources/iph.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
                                             <a href="details.html" class="link-product-add-cart">Quick View</a>
@@ -185,7 +192,8 @@
                         <div class="col-md-4 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
                                 <div class="men-thumb-item">
-                                    <img src="Resources/glx.jpg" alt="">
+                                    {% load static %}
+                                    <img src="{% static 'Resources/glx.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
                                             <a href="details.html" class="link-product-add-cart">Quick View</a>

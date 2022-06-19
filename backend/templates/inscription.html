@@ -45,20 +45,22 @@
                         <hr class="solid">
                     </div>
                     <div class="login-form">
-                        <div class="field">
-                            <h4>Adresse Email</h4>
-                            <input type="email" placeholder="Adresse E-mail">
-                        </div>
-                        <div class="field">
-                            <h4>Mot de Passe</h4>
-                            <input type="password" placeholder="Mot de Passe">
-                        </div>
-                        <div class="form-group">
-                            <a href="">Mot de passe oublié ?</a>
-                        </div>
-                        <div class="login">
-                            <a href="">Connectez-vous</a>
-                        </div>
+                        <form action='/authentication/login/' method = "post" id="loginform"></form>
+                            <div class="field">
+                                <h4>Adresse Email</h4>
+                                <input type="email" id="email" name="email" placeholder="Adresse E-mail" required>
+                            </div>
+                            <div class="field">
+                                <h4>Mot de Passe</h4>
+                                <input type="password" id="password" name="password" placeholder="Mot de Passe" required>
+                            </div>
+                            <div class="form-group">
+                                <a href="" >Mot de passe oublié ?</a>
+                            </div>
+                            <div class="login">
+                                <a href="#" onclick="document.getElementById('loginform').submit()">Connectez-vous</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="right-side">

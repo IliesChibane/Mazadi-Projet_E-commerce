@@ -18,7 +18,7 @@
 
 <body>
     <div class="circle-white">
-        <a href="categories.html">
+        <a href="{% url 'categories2' %}">
             {% load static %}
             <img src="{% static 'Resources\arrow.png' %}" id="arrow">
         </a>
@@ -32,20 +32,20 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index2.html">Accueil</a></li>
-                    <li><a href="index2.html">Projet</a></li>
+                    <li><a href="{% url 'home_user' %}">Accueil</a></li>
+                    <li><a href="{% url 'home_user' %}">Projet</a></li>
                     <li class="dropdown-menu">
-                        <a href="categories.html" class="dropdown">Catégories</a>
+                        <a href="{% url 'categories2' %}" class="dropdown">Catégories</a>
                         <ul class="submenu">
-                            <li> <a href="categories2.html">All</a></li>
-                            <li> <a href="">Voitures</a></li>
-                            <li> <a href="">Téléphones</a></li>
-                            <li> <a href="">Meubles</a></li>
-                            <li> <a href="">Sport</a></li>
+                            <li> <a href="{% url 'categories2' %}">All</a></li>
+                            <li> <a href="{% url 'voitures' %}">Voitures</a></li>
+                            <li> <a href="{% url 'telephones' %}">Téléphones</a></li>
+                            <li> <a href="{% url 'meubles' %}">Meubles</a></li>
+                            <li> <a href="{% url 'sport' %}">Sport</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="index2.html" class="prp">A propos</a></li>
+                    <li><a href="{% url 'home_user' %}" class="prp">A propos</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,13 +76,13 @@
                                     <img src="{% static 'Resources/chev.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Table de Nuit</a>
+                                        <a href="{% url 'details' %}">Table de Nuit</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">1500 DZD</span>
@@ -98,7 +98,7 @@
                                     <img src="{% static 'Resources/bar.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -106,7 +106,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Bar fixe</a>
+                                        <a href="{% url 'details' %}">Bar fixe</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">9800 DZD</span>
@@ -123,7 +123,7 @@
                                     <img src="{% static 'Resources/comment-choisir-sa-corde-a-sauter.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -131,7 +131,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Corde à sauter</a>
+                                        <a href="{% url 'details' %}">Corde à sauter</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">1199 DZD</span>
@@ -149,7 +149,7 @@
                                     <img src="{% static 'Resources/comment-choisir-sa-corde-a-sauter.jpg' %}" alt="">
                                     <div class="men-cart-pro">
                                         <div class="inner-men-cart-pro">
-                                            <a href="details.html" class="link-product-add-cart">Quick View</a>
+                                            <a href="{% url 'details' %}" class="link-product-add-cart">Quick View</a>
                                         </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -157,7 +157,7 @@
                                 </div>
                                 <div class="item-info-product ">
                                     <h4>
-                                        <a href="details.html">Corde à sauter</a>
+                                        <a href="{% url 'details' %}">Corde à sauter</a>
                                     </h4>
                                     <div class="info-product-price">
                                         <span class="item_price">1199 DZD</span>
